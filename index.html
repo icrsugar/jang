@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>제목</title>
     <style>
         body {
-            font-family: "Arial", sans-serif;
-            font-size: 20px;
-        }
-        img {
-            width: 100px;
-            height: auto;
-        }
-        button {
-            display: block;
-            width: 200px;
-            height: 50px;
-            margin: 20px auto;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            border-radius: 10px;
-            border: 2px solid #4CAF50;
-            font-size: 20px;
-        }
-        button:hover {
-            background-color: #45a049;
+            background-color: rgb(255, 196, 0);
+            font-family: 'Goun Batang', serif;
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
-
-<h1>안녕하세요. 홍길동을 지지하시면 아래 버튼을 눌러서 성함을 보내주세요.</h1>
-
-<button id="send-sms">지지합니다</button>
-
-<script>
-document.getElementById('send-sms').addEventListener('click', function(event) {
-    event.preventDefault();
-    var name = prompt("성함을 입력해주세요:");
-    if (name) {
-        window.open('sms:010-9063-3338?body=이름 = ' + encodeURIComponent(name));
-    }
-});
-</script>
-
+    <h1>안녕하세요!</h1>
+    <p>이것은 HTML 문서입니다.</p>
+    <p>
+        겨울 바람이 차가워도, 우리 마음은 따뜻하게,<br>
+        추운 날씨에도 불구하고, 건강하게 웃음 짓게.<br>
+        행복이란 작은 빛, 우리를 따뜻하게 만드는,<br>
+        겨울의 추위 속에서도, 사랑의 불꽃을 키워주는.<br>
+        그래, 겨울이 와도, 우리는 건강하고 행복하게.
+    </p>
+    <p>시 잘읽으셨나요. 좋으셨으면, 저에게 문자 주세요.</p>
+    <a href="sms:010-9063-8883?body=Thank%20you!">
+        <button> 이 버튼을 클릭해서 응원메세지를 보내주세요. </button>
+    </a>
 </body>
 </html>
+
